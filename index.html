@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=content_copy" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Password Generator</h1>
+    
+    <div class="copy-password">
+        <input type="text" class="copy-password-input" value="" id="password-display" readonly />
+
+        <button class="copy-password-button" id="copy-button">
+        <span class="material-symbols-outlined">content_copy</span>
+        </button>
+    </div>
+    <div class="password-details-container">
+        <p>Character Lenght</p> <span> 0 </span>
+        <input type="range" min="4" max="20" value="10" class="password-length-slider" id="length-slider">
+        <div class="checkboxes-options">
+           <div class="option"> 
+                <label>
+                    <input type="checkbox">
+                    <span>Include Uppercase Letters</span>
+                </label>
+            </div> 
+            <div class="option"> 
+                <label>
+                    <input type="checkbox">
+                    <span>Include Lowercase Letters</span>
+                </label>
+            </div> 
+            <div class="option"> 
+                <label>
+                    <input type="checkbox">
+                    <span>Include Numbers</span>
+                </label>
+            </div> 
+            <div class="option"> 
+                <label>
+                    <input type="checkbox">
+                    <span>Inlcude Symbols</span>
+                </label>
+            </div> 
+        </div>
+        <button id="generate-password">GENERATE!</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
