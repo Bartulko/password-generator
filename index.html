@@ -17,35 +17,40 @@
         </button>
     </div>
     <div class="password-details-container">
-        <p>Character Lenght</p> <span> 0 </span>
+        <div class="chrc-length">
+            <p>Character Length</p> <span id="length-display"> 10 </span>
+        </div>
         <input type="range" min="4" max="20" value="10" class="password-length-slider" id="length-slider">
         <div class="checkboxes-options">
            <div class="option"> 
                 <label>
-                    <input type="checkbox">
-                    <span>Include Uppercase Letters</span>
+                    <input type="checkbox" id="uppercase-checkbox">
+                    <span >Include Uppercase Letters</span>
                 </label>
             </div> 
             <div class="option"> 
                 <label>
-                    <input type="checkbox">
+                    <input type="checkbox" id="lowercase-checkbox">
                     <span>Include Lowercase Letters</span>
                 </label>
             </div> 
             <div class="option"> 
                 <label>
-                    <input type="checkbox">
+                    <input type="checkbox" id="numbers-checkbox">
                     <span>Include Numbers</span>
                 </label>
             </div> 
             <div class="option"> 
                 <label>
-                    <input type="checkbox">
+                    <input type="checkbox" id="symbols-checkbox">
                     <span>Inlcude Symbols</span>
                 </label>
             </div> 
         </div>
-        <button id="generate-password">GENERATE!</button>
+        <div style="position: relative; display: inline-block;"></div>
+            <button class="button-generate" id="generate-password">GENERATE!</button>
+            <span id="tooltip" class="tooltip-text">CHECK AT LEAST ONE CHECKBOX!</span>
+        </div>
     </div>
     <script src="script.js"></script>
   </body>
